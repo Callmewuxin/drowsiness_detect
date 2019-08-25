@@ -15,10 +15,9 @@ import cv2
 import serial
 from threading import Thread
 
-def write_bluez():
-    ser = serial.Serial('com5', 9600)
+def write_bluez(ser):
     print('Alarm')
-    for i in range(2):
+    for i in range(5):
         ser.write('A'.encode())
     ser.close()
 
@@ -130,6 +129,7 @@ while True:
                     ser = serial.Serial('com5', 9600)
                     ALARM_ON = True
                     t = Thread(target=write_bluez,
+                               args=(ser,)
                             )   # 开线程
                     t.deamon = True
                     t.start()
