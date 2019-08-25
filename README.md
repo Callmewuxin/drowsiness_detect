@@ -1,9 +1,9 @@
 # Description
-1. Drowsiness detection based on EA
+1. Drowsiness detection based on EAR
 2. EAR based on dlib's facial landmark
 
 # Feature
-1.*.py file for detect drowsiness step by step
+1. *.py file for detect drowsiness step by step
 2. run video_drowniess_detect.py, when detect drowsiness, serial sends alarm and arduino starts vibrated.
 
 # heart beat for detection
