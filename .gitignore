@@ -1,0 +1,6 @@
+## ignore these files
+/.idea
+/__pycache__
+*.csv
+*.dat
+*.jpg
